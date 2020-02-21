@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace CategoryTree_ProductManagement.Core.DataAccess
 {
     //Database bağlantılarımda sadece IEntity implementini barındıran Entity'lerimin kullanılmasını ve bunlar için taslak oluşturma niteliğindeki interface'imi CRUD işlemlerimle birlikte tanımladığım kısım
-    interface IEntityRepository<TEntity>
+    public interface IEntityRepository<TEntity>
         where TEntity : IEntity
     {
         void Add(TEntity entity);

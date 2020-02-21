@@ -46,5 +46,11 @@
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CategoryTree_ProductManagement.Core\CategoryTree_ProductManagement.Core.csproj">
+      <Project>{BA4C159C-8053-4E0C-A4C4-F0124014AC87}</Project>
+      <Name>CategoryTree_ProductManagement.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
