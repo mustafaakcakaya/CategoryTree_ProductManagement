@@ -13,6 +13,7 @@ namespace CategoryTree_ProductManagement.Entities.Models
         {
             Products = new HashSet<Product>();
             Categories = new HashSet<Category>();
+            Errors = new HashSet<Error>();
         }
         public int UserID { get; set; }
         public string FirstName { get; set; }
@@ -24,6 +25,8 @@ namespace CategoryTree_ProductManagement.Entities.Models
 
         public virtual ICollection<Product> Products { get; set; }
         public virtual ICollection<Category> Categories { get; set; }
+        public virtual ICollection<Error> Errors { get; set; }
+
 
 
     }
