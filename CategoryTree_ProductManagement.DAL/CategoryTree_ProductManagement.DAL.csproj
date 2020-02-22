@@ -55,9 +55,12 @@
     <Compile Include="Abstract\IProductDAL.cs" />
     <Compile Include="Abstract\IUserDAL.cs" />
     <Compile Include="Concrete\EntityFramework\CTPMDbContext.cs" />
+    <Compile Include="Concrete\EntityFramework\CTPMInitializer.cs" />
     <Compile Include="Concrete\EntityFramework\Mapping\CategoryMapping.cs" />
+    <Compile Include="Concrete\EntityFramework\Mapping\ErrorMapping.cs" />
     <Compile Include="Concrete\EntityFramework\Mapping\ProductMapping.cs" />
     <Compile Include="Concrete\EntityFramework\Mapping\UserMapping.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

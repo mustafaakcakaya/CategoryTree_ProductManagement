@@ -12,6 +12,7 @@ namespace CategoryTree_ProductManagement.Entities.Models
         public Category()
         {
             Products = new HashSet<Product>();
+            ChildCategories = new HashSet<Category>();
         }
         public int CategoryID { get; set; }
         public string CategoryName { get; set; }
@@ -26,7 +27,7 @@ namespace CategoryTree_ProductManagement.Entities.Models
         public Category ParentCategory { get; set; }
 
         public virtual ICollection<Product> Products { get; set; }
-
+        public virtual ICollection<Category> ChildCategories { get; set; }
 
     }
 }

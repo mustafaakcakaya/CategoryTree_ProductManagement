@@ -1,0 +1,6 @@
+Creating Store Procedure with Managed Code
+
+https://docs.microsoft.com/en-us/aspnet/web-forms/overview/data-access/advanced-data-access-scenarios/creating-stored-procedures-and-user-defined-functions-with-managed-code-cs
+
+
+<hr/>

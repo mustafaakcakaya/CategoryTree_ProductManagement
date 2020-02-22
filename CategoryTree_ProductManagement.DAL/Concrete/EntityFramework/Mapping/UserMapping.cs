@@ -10,6 +10,27 @@ namespace CategoryTree_ProductManagement.DAL.Concrete.EntityFramework.Mapping
 {
     public class UserMapping : EntityTypeConfiguration<User>
     {
+        public UserMapping()
+        {
+            HasKey(a => a.UserID);
 
+            HasMany(a => a.Errors)
+                .WithRequired(a => a.ErrorOwner)
+                .HasForeignKey(a => a.ErrorOwnerID);
+
+
+            Property(a => a.FirstName)
+                .HasMaxLength(35)
+                .IsRequired();
+
+            Property(a => a.LastName)
+                .HasMaxLength(35)
+                .IsRequired();
+
+            Property(a => a.CellPhone)
+                .HasColumnType("char")
+                .HasMaxLength(13)
+                .IsRequired();
+        }
     }
 }
