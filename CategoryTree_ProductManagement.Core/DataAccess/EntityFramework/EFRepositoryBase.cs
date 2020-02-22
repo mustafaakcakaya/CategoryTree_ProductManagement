@@ -11,7 +11,7 @@ namespace CategoryTree_ProductManagement.Core.DataAccess.EntityFramework
 {
     /*Bu sınıfı yapılacak bütün CRUD işlemlerini Data Access Layer'da her yere aynı şeyleri yazmamak(yani clean code'u sağlayarak karmaşıklığı en aza indirmek) 
      ve değiştirmek istediğimde tek kanalda ulaşabilmeyi sağlamak(yani maintainability'yi arttırmak) için kullandım.*/
-    class EFRepositoryBase<TEntity, TContext> : IEntityRepository<TEntity>
+    public class EFRepositoryBase<TEntity, TContext> : IEntityRepository<TEntity>
         where TEntity : class, IEntity, new()
         where TContext : DbContext, new()
     {

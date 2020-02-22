@@ -52,10 +52,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\ICategoryDAL.cs" />
+    <Compile Include="Abstract\IErrorDAL.cs" />
     <Compile Include="Abstract\IProductDAL.cs" />
     <Compile Include="Abstract\IUserDAL.cs" />
     <Compile Include="Concrete\EntityFramework\CTPMDbContext.cs" />
     <Compile Include="Concrete\EntityFramework\CTPMInitializer.cs" />
+    <Compile Include="Concrete\EntityFramework\DAL\CategoryDAL.cs" />
+    <Compile Include="Concrete\EntityFramework\DAL\ErrorDAL.cs" />
+    <Compile Include="Concrete\EntityFramework\DAL\ProductDAL.cs" />
+    <Compile Include="Concrete\EntityFramework\DAL\UserDAL.cs" />
     <Compile Include="Concrete\EntityFramework\Mapping\CategoryMapping.cs" />
     <Compile Include="Concrete\EntityFramework\Mapping\ErrorMapping.cs" />
     <Compile Include="Concrete\EntityFramework\Mapping\ProductMapping.cs" />
@@ -63,9 +68,7 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Concrete\EntityFramework\DAL\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\CategoryTree_ProductManagement.Core\CategoryTree_ProductManagement.Core.csproj">
       <Project>{BA4C159C-8053-4E0C-A4C4-F0124014AC87}</Project>
