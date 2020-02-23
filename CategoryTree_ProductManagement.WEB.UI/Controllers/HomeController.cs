@@ -24,6 +24,7 @@ namespace CategoryTree_ProductManagement.WEB.UI.Controllers
         [HttpPost]
         public ActionResult Login(User u)
         {
+
             return View(u);
         }
     }

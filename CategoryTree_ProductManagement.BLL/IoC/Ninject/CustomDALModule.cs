@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CategoryTree_ProductManagement.BLL.IoC.Ninject
 {
-    class CustomDALModule : NinjectModule
+    public class CustomDALModule : NinjectModule
     {
         public override void Load()
         {

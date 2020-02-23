@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace CategoryTree_ProductManagement.BLL.Concrete
 {
-    class UserService : IUserService
+    public class UserService : IUserService
     {
         IUserDAL _dal;
         //başındaki alt tireyi farklı bir sınıfın nesnesi olduğunu belirtmek için kullanıyorum.
