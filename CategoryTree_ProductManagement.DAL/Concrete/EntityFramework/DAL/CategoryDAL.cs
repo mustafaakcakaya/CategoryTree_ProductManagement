@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CategoryTree_ProductManagement.DAL.Concrete.EntityFramework.DAL
 {
-    class CategoryDAL : EFRepositoryBase<Category, CTPMDbContext>, ICategoryDAL
+    public class CategoryDAL : EFRepositoryBase<Category, CTPMDbContext>, ICategoryDAL
     {
 
     }

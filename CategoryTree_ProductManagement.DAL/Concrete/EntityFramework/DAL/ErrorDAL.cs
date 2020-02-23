@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CategoryTree_ProductManagement.DAL.Concrete.EntityFramework.DAL
 {
-    class ErrorDAL : EFRepositoryBase<Error, CTPMDbContext>, IErrorDAL
+    public class ErrorDAL : EFRepositoryBase<Error, CTPMDbContext>, IErrorDAL
     {
 
     }

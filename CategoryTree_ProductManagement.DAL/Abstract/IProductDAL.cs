@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CategoryTree_ProductManagement.DAL.Abstract
 {
-    interface IProductDAL:IEntityRepository<Product>
+    public interface IProductDAL:IEntityRepository<Product>
     {
 
     }
