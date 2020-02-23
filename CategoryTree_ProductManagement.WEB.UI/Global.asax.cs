@@ -1,8 +1,10 @@
+using CategoryTree_ProductManagement.WEB.UI.App_Start;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Optimization;
 using System.Web.Routing;
 
 namespace CategoryTree_ProductManagement.WEB.UI
@@ -13,6 +15,7 @@ namespace CategoryTree_ProductManagement.WEB.UI
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
     }
 }

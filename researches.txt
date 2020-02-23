@@ -3,4 +3,8 @@ Creating Store Procedure with Managed Code
 https://docs.microsoft.com/en-us/aspnet/web-forms/overview/data-access/advanced-data-access-scenarios/creating-stored-procedures-and-user-defined-functions-with-managed-code-cs
 
 
-<hr/>
+
+IoC konyeyner için emin olmak için kontrol ettiğim yerler 
+
+https://stackoverflow.com/questions/47348311/ninject-mvc5-not-generating-ninjectwebcommon-cs
+https://github.com/SkydivingAngel/Ninject-WebApi-2-and-Mvc5

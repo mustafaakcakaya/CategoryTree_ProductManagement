@@ -1,5 +1,6 @@
 ﻿using CategoryTree_ProductManagement.BLL.Abstract.EntityServices;
 using CategoryTree_ProductManagement.BLL.Concrete;
+using CategoryTree_ProductManagement.BLL.IoC.Ninject;
 using Microsoft.Web.Infrastructure.DynamicModuleHelper;
 using Ninject;
 using Ninject.Web.Common;
