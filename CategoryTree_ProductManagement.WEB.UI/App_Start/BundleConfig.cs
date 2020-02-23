@@ -10,7 +10,7 @@ namespace CategoryTree_ProductManagement.WEB.UI.App_Start
     {
         public static void RegisterBundles(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/js/bundleJS").Include());
+            bundles.Add(new ScriptBundle("~/js/bundleJS").Include(/* js dosyaları */));
         }
     }
 }

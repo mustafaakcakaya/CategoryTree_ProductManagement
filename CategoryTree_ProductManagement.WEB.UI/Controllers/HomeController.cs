@@ -1,4 +1,5 @@
-﻿using CategoryTree_ProductManagement.Core.Entity.Abstract;
+﻿using CategoryTree_ProductManagement.BLL.Abstract.EntityServices;
+using CategoryTree_ProductManagement.Core.Entity.Abstract;
 using CategoryTree_ProductManagement.Entities.Models;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,11 @@ namespace CategoryTree_ProductManagement.WEB.UI.Controllers
     public class HomeController : Controller
     {
         // GET: Home
+        IUserService _userService;
+        public HomeController(IUserService userService)
+        {
+            _userService = userService;
+        }
         public ActionResult Index()
         {
             return View();
