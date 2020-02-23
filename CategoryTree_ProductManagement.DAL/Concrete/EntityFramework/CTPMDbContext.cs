@@ -15,7 +15,7 @@ namespace CategoryTree_ProductManagement.DAL.Concrete.EntityFramework
     {
         public CTPMDbContext() :base ("CTPM")
         {
-
+            Database.SetInitializer(new CTPMInitializer());
         }
 
         public DbSet<Product> Products { get; set; }
